@@ -9,7 +9,7 @@ jobs:
   deploy:
     name: 'deploy github pages'
     runs-on: ubuntu-latest
-    if: ${{ github.repository == 'tc39/ecma262' }}
+    if: ${{ github.repository == 'bakkot/ecma262-fork' }}
 
     steps:
       - uses: actions/checkout@v2
@@ -20,3 +20,5 @@ jobs:
           use-npm-ci: true
       - run: npm run build-only
       - run: ./scripts/auto-deploy.sh
+        env:
+          GH_DEPLOY_KEY: ${{ secrets.GH_DEPLOY_KEY }}
