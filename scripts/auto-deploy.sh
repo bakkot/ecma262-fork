@@ -3,7 +3,7 @@
 set -euxo pipefail
 
 
-declare -r GH_USER_EMAIL="bot@tc39.es"
+declare -r GH_USER_EMAIL="bot@tc39"
 declare -r GH_USER_NAME="Self-deploy bot"
 declare -r COMMIT_MESSAGE="Update gh-pages"
 
