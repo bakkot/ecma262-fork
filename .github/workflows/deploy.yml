@@ -21,4 +21,4 @@ jobs:
       - run: npm run build-only
       - run: ./scripts/auto-deploy.sh
         env:
-          GH_DEPLOY_KEY: ${{ secrets.GH_DEPLOY_KEY }}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

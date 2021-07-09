@@ -26,4 +26,4 @@ git config --global init.defaultBranch gh-pages
 git init
 git add -A
 git commit --message "${COMMIT_MESSAGE}"
-git push --force "git@github.com:${GITHUB_REPOSITORY}.git" gh-pages
+git push --force "https://${GITHUB_ACTOR}:${GITHUB_TOKEN}@github.com/${GITHUB_REPOSITORY}.git" gh-pages
