@@ -1,0 +1,25 @@
+- open issue: evaluation should allow a state parameter?
+
+- open issue: look at the LabelledEvaluation for loop semantics and determine if they're doing dumb things for "optimization" reasons
+
+- open an issue considering moving BindingIdentifier in with the rest of binding destructuring
+  - this would allow us to move BindingInitialization back into binding destructuring section
+
+- open an issue to refactor ExportedBindings and ExportedNames in terms of ExportedEntries
+
+- open an issue to use the term "evaluation" properly in the regexp AOs that do evaluation
+
+- open an issue move CoverCallExpressionAndAsyncArrowHead to be next to CallExpression
+
+
+
+- look for empty clauses
+  - also probably lint for them
+
+- merge https://github.com/tc39/ecmarkup/pull/285
+
+- reorg IsFunctionDefinition so the useful ones are at the top, maybe
+
+- audit "as the arguments" vs "with arguments" vs "... as the arguments"
+
+- audit "SDO of this |Nonterminal|" vs "SDO of |Nonterminal|"
